@@ -1,0 +1,46 @@
+# Sprint 状态文件模板
+# 此文件由 Scrum Master 维护
+# 开发者请勿直接修改此文件
+
+sprint:
+  id: 1
+  name: "Sprint 1 - 用户认证和基础功能"
+  start_date: "2026-03-01"
+  end_date: "2026-03-14"
+  status: planning  # planning, in-progress, completed, blocked
+
+stories:
+  - id: EPIC-01-user-auth
+    title: 实现用户认证功能
+    assignee: 开发者姓名
+    status: pending
+    priority: high
+    estimated_hours: 8
+    actual_hours: 0
+    blocked: false
+
+  - id: EPIC-01-user-profile
+    title: 实现用户资料功能
+    assignee: 开发者姓名
+    status: pending
+    priority: high
+    estimated_hours: 6
+    actual_hours: 0
+    blocked: false
+
+  - id: EPIC-02-matching-list
+    title: 实现推荐列表功能
+    assignee: 开发者姓名
+    status: pending
+    priority: medium
+    estimated_hours: 12
+    actual_hours: 0
+    blocked: false
+
+risks:
+  - description: 风险描述
+    impact: high/medium/low
+    mitigation: 缓解措施
+
+notes:
+  - "2026-02-28: Sprint 创建"
