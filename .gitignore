@@ -137,3 +137,68 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# ============================================================================
+# 项目特定配置 - "红娘配对"小程序
+# ============================================================================
+
+# 敏感配置文件（严禁提交）
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+config/production.*
+
+# 微信小程序相关
+miniprogram_npm/
+.private/
+project.private.config.json
+
+# BMAD implementation artifacts - 团队协作规则
+# Story 文档由开发者各自管理，避免冲突
+# Sprint 状态由 Scrum Master 管理
+# 回顾文档需要提交
+
+# 个人工作文件（每个开发者有自己的副本）
+# 忽略所有 .md 文件，但保留模板和 .gitkeep
+_bmad-output/implementation-artifacts/stories/*.md
+!_bmad-output/implementation-artifacts/stories/.gitkeep
+!_bmad-output/implementation-artifacts/stories/*template*.md
+
+# Sprint 状态文件（Scrum Master 负责）
+# 忽略实际的状态文件，但保留模板
+_bmad-output/implementation-artifacts/sprint-status-*.yaml
+!_bmad-output/implementation-artifacts/sprint-status-template.yaml
+!_bmad-output/implementation-artifacts/sprint-status.yaml.template
+
+# 临时工作文件
+*.tmp
+*.bak
+*.swp
+*~
+.~*
+
+# 编辑器配置（.editorconfig 统一管理，不提交个人设置）
+.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 构建产物（源码在 src/，构建产物不需要提交）
+src/*/dist/
+build/
